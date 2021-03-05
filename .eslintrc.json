@@ -1,0 +1,94 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    /*
+    |--------------------------------------------------------------------------
+    | Airbnb
+    |--------------------------------------------------------------------------
+    |
+    | Configure basic ESLint rules and the following plugins:
+    |
+    | * eslint-plugin-import
+    | * eslint-plugin-jsx-a11y
+    | * eslint-plugin-react
+    | * eslint-plugin-react-hooks
+    |
+    | # References
+    |
+    | * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+    | * [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)
+    | * [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+    | * [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+    | * [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import)
+    | * [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
+    | * [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
+    | * [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks)
+    |
+    */
+
+    "airbnb",
+
+    /*
+    |--------------------------------------------------------------------------
+    | TypeScript
+    |--------------------------------------------------------------------------
+    |
+    | Must come after non-stylistic settings to resolve issues with TypeScript.
+    |
+    | # References
+    |
+    | * [ESLint Plugin TypeScript](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
+    | * [Premade configs](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/src/configs)
+    |
+    */
+
+    "plugin:@typescript-eslint/recommended",
+
+    /*
+    |--------------------------------------------------------------------------
+    | Prettier
+    |--------------------------------------------------------------------------
+    |
+    | Disable unnecessary or conflicting style rules.
+    |
+    | # References
+    |
+    | * [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+    |
+    */
+
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/prettier",
+    "prettier/react"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react"
+  ],
+  "rules": {
+    // Only .jsx and .tsx files may have JSX.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+    "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx"] }],
+
+    // Allow JSX props spreading.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
+    "react/jsx-props-no-spreading": 0,
+
+    // React is already in the global scope.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
+    "react/react-in-jsx-scope": 0
+  }
+}
