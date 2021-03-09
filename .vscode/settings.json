@@ -2,7 +2,10 @@
   // Run code actions on save.
   "editor.codeActionsOnSave": {
     // Fix ESLint issues.
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+
+    // Fix stylelint issues.
+    "source.fixAll.stylelint": true
   },
 
   // Define Prettier as the default formatter.
