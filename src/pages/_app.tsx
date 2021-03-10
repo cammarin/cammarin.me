@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import '@/styles/globals.css'
 import 'tailwindcss/tailwind.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
@@ -7,6 +8,14 @@ const App = ({ Component, pageProps }: AppProps) => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+          rel="preload"
+          href="/fonts/Inter/Inter-roman.var.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+        />
       </Head>
 
       <Component {...pageProps} />
