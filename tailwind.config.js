@@ -11,6 +11,10 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
+      letterSpacing: {
+        tight: '-0.0225em',
+        normal: '-0.0125em',
+      },
     },
   },
   variants: {
