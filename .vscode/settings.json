@@ -1,4 +1,7 @@
 {
+  // Disable CSS validations (handled by stylelint).
+  "css.validate": false,
+
   // Run code actions on save.
   "editor.codeActionsOnSave": {
     // Fix ESLint issues.
@@ -12,5 +15,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // Format file on save.
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+
+  // Disable SCSS validations (handled by stylelint).
+  "scss.validate": false
 }
