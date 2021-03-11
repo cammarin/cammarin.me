@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Main from '@/components/Main'
 import Navbar from '@/components/Navbar'
 import Skippy from '@/components/Skippy'
 
@@ -33,7 +34,7 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
         </Navbar.Nav>
       </Navbar>
 
-      <main id="content">{children}</main>
+      <Main id="content">{children}</Main>
 
       <footer></footer>
     </>
