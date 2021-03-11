@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
+import Skippy from '@/components/Skippy'
 
 type LayoutProps = {
   title?: string
@@ -20,7 +21,7 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
         </title>
       </Head>
 
-      <a href="#content">Skip to main content</a>
+      <Skippy href="#content">Skip to main content</Skippy>
 
       <Navbar>
         <Navbar.Brand>@cammarin</Navbar.Brand>
