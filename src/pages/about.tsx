@@ -1,3 +1,4 @@
+import DisplayHeading from '@/components/DisplayHeading'
 import Layout from '@/components/Layout'
 
 const About = () => {
@@ -6,7 +7,7 @@ const About = () => {
       title="About"
       description="More about the designer and developer Carlos Marin."
     >
-      About
+      <DisplayHeading>About</DisplayHeading>
     </Layout>
   )
 }

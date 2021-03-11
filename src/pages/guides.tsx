@@ -1,3 +1,4 @@
+import DisplayHeading from '@/components/DisplayHeading'
 import Layout from '@/components/Layout'
 
 const Guides = () => {
@@ -6,7 +7,7 @@ const Guides = () => {
       title="Guides"
       description="Thoughts and tips about accessibility in data visualization."
     >
-      Guides
+      <DisplayHeading>Guides</DisplayHeading>
     </Layout>
   )
 }

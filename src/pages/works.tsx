@@ -1,3 +1,4 @@
+import DisplayHeading from '@/components/DisplayHeading'
 import Layout from '@/components/Layout'
 
 const Works = () => {
@@ -6,7 +7,7 @@ const Works = () => {
       title="Works"
       description="A list of projects I was responsible or part of."
     >
-      Works
+      <DisplayHeading>Works</DisplayHeading>
     </Layout>
   )
 }
