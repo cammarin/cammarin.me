@@ -18,4 +18,8 @@
     font-display: swap;
     src: url('/fonts/Inter/Inter-italic.var.woff2') format('woff2');
   }
+
+  body {
+    @apply tracking-normal;
+  }
 }

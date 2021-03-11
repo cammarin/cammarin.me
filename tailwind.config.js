@@ -8,6 +8,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        'light-mode-white': '#fcfffe',
+        'light-mode-black': '#232029',
+        'dark-mode-white': '#eef2f0',
+        'dark-mode-black': '#1c1a23',
+      },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
