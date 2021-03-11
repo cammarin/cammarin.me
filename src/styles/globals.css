@@ -23,5 +23,7 @@
     @apply text-light-mode-black;
     @apply tracking-normal;
     @apply bg-light-mode-white;
+    @apply dark:text-dark-mode-white;
+    @apply dark:bg-dark-mode-black;
   }
 }
