@@ -2,8 +2,8 @@ import NavbarNavLink from '@/components/NavbarNavLink'
 
 type NavbarNavProps = JSX.IntrinsicElements['ul']
 
-const NavbarNav = ({ ...htmlUListProps }: NavbarNavProps) => {
-  return <ul {...htmlUListProps} />
+const NavbarNav = ({ className = '', ...htmlUListProps }: NavbarNavProps) => {
+  return <ul className={`${className} flex`} {...htmlUListProps} />
 }
 
 NavbarNav.Link = NavbarNavLink
