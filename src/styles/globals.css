@@ -20,6 +20,8 @@
   }
 
   body {
+    @apply text-light-mode-black;
     @apply tracking-normal;
+    @apply bg-light-mode-white;
   }
 }
