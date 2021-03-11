@@ -24,19 +24,21 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
 
       <Skippy href="#content">Skip to main content</Skippy>
 
-      <Navbar>
-        <Navbar.Brand>@cammarin</Navbar.Brand>
+      <div className="max-w-3xl px-6 mx-auto">
+        <Navbar>
+          <Navbar.Brand>@cammarin</Navbar.Brand>
 
-        <Navbar.Nav>
-          <Navbar.Nav.Link href="/about">About</Navbar.Nav.Link>
-          <Navbar.Nav.Link href="/guides">Guides</Navbar.Nav.Link>
-          <Navbar.Nav.Link href="/works">Works</Navbar.Nav.Link>
-        </Navbar.Nav>
-      </Navbar>
+          <Navbar.Nav>
+            <Navbar.Nav.Link href="/about">About</Navbar.Nav.Link>
+            <Navbar.Nav.Link href="/guides">Guides</Navbar.Nav.Link>
+            <Navbar.Nav.Link href="/works">Works</Navbar.Nav.Link>
+          </Navbar.Nav>
+        </Navbar>
 
-      <Main id="content">{children}</Main>
+        <Main id="content">{children}</Main>
 
-      <footer></footer>
+        <footer></footer>
+      </div>
     </>
   )
 }
