@@ -27,3 +27,11 @@
     @apply dark:bg-dark-mode-black;
   }
 }
+
+@layer utilities {
+  @variants dark {
+    .filter-desaturate {
+      filter: saturate(70%);
+    }
+  }
+}
