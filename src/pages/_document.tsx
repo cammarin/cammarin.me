@@ -1,4 +1,5 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
+import { ColorModeScript } from '@/theme/index'
 
 class Document extends NextDocument {
   render() {
@@ -7,6 +8,7 @@ class Document extends NextDocument {
         <Head />
 
         <body>
+          <ColorModeScript />
           <Main />
           <NextScript />
         </body>

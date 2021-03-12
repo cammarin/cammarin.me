@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import { ThemeProvider } from '@/theme/index'
 import '@/styles/globals.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
@@ -17,7 +18,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         />
       </Head>
 
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }
