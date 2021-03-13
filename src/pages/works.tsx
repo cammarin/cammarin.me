@@ -10,7 +10,7 @@ const Works = () => {
       description="A list of projects I was responsible or part of."
     >
       <DisplayHeading>
-        <GradientText className="glow glow-30 dark:glow-60">Works</GradientText>
+        <GradientText className="glow glow-40 dark:glow-60">Works</GradientText>
       </DisplayHeading>
 
       <SubHeading>A curated list of projects</SubHeading>

@@ -10,7 +10,7 @@ const About = () => {
       description="More about the designer and developer Carlos Marin."
     >
       <DisplayHeading>
-        <GradientText className="glow glow-30 dark:glow-60">About</GradientText>
+        <GradientText className="glow glow-40 dark:glow-60">About</GradientText>
       </DisplayHeading>
 
       <SubHeading>Education, jobs & interests</SubHeading>

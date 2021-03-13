@@ -8,7 +8,7 @@ const Home = () => {
     <Layout description="Homepage">
       <DisplayHeading>
         Hi, I’m{' '}
-        <GradientText className="glow glow-30 dark:glow-60">
+        <GradientText className="glow glow-40 dark:glow-60">
           Carlos Marin
         </GradientText>
       </DisplayHeading>
