@@ -58,7 +58,7 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
                       gradientTransform="rotate(45)"
                     >
                       <stop offset="20%" stopColor="#34d399" />
-                      <stop offset="100%" stopColor="#3b82f6" />
+                      <stop offset="100%" stopColor="#6366f1" />
                     </linearGradient>
 
                     <linearGradient
