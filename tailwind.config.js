@@ -41,7 +41,14 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['focus-visible'],
+      ringColor: ['focus-visible'],
+      ringOffsetColor: ['focus-visible'],
+      ringOffsetWidth: ['focus-visible'],
+      ringWidth: ['focus-visible'],
+      textColor: ['focus-visible'],
+    },
   },
   plugins: [
     plugin(function ({ addBase, addUtilities }) {
