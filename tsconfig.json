@@ -23,7 +23,6 @@
       "@/components/*": ["components/*"],
       "@/lib/*": ["lib/*"],
       "@/styles/*": ["styles/*"],
-      "@/theme/*": ["theme/*"],
       "@/types/*": ["types/*"]
     },
     "resolveJsonModule": true,

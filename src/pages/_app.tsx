@@ -1,9 +1,12 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import { ThemeProvider } from '@/theme/index'
+import { ThemeProvider } from 'next-themes'
 import '@/styles/globals.css'
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({
+  Component,
+  pageProps,
+}: AppProps & { Component: { theme?: string } }) => {
   return (
     <>
       <Head>
@@ -18,7 +21,10 @@ const App = ({ Component, pageProps }: AppProps) => {
         />
       </Head>
 
-      <ThemeProvider>
+      <ThemeProvider
+        attribute="class"
+        forcedTheme={Component.theme || undefined}
+      >
         <Component {...pageProps} />
       </ThemeProvider>
     </>
