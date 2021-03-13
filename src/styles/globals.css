@@ -22,8 +22,64 @@
 
 @layer utilities {
   @variants dark {
-    .filter-desaturate {
+    .filter-desaturate-0 {
+      filter: saturate(100%);
+    }
+
+    .filter-desaturate-5 {
+      filter: saturate(95%);
+    }
+
+    .filter-desaturate-10 {
+      filter: saturate(90%);
+    }
+
+    .filter-desaturate-20 {
+      filter: saturate(80%);
+    }
+
+    .filter-desaturate-25 {
+      filter: saturate(75%);
+    }
+
+    .filter-desaturate-30 {
       filter: saturate(70%);
+    }
+
+    .filter-desaturate-40 {
+      filter: saturate(60%);
+    }
+
+    .filter-desaturate-50 {
+      filter: saturate(50%);
+    }
+
+    .filter-desaturate-60 {
+      filter: saturate(40%);
+    }
+
+    .filter-desaturate-70 {
+      filter: saturate(30%);
+    }
+
+    .filter-desaturate-75 {
+      filter: saturate(25%);
+    }
+
+    .filter-desaturate-80 {
+      filter: saturate(20%);
+    }
+
+    .filter-desaturate-90 {
+      filter: saturate(10%);
+    }
+
+    .filter-desaturate-95 {
+      filter: saturate(5%);
+    }
+
+    .filter-desaturate-100 {
+      filter: saturate(0);
     }
 
     .glow-sm::before,
