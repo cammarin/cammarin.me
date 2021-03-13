@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
 
@@ -44,7 +45,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    plugin(function ({ addBase }) {
+    plugin(function ({ addBase, addUtilities }) {
       const webfonts = [
         {
           '@font-face': {
@@ -67,6 +68,21 @@ module.exports = {
       ]
 
       addBase(webfonts)
+
+      const filterUtilities = {
+        desaturate: _.map(
+          [0, 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100],
+          (value) => {
+            return {
+              [`.filter-desaturate-${value}`]: {
+                filter: `saturate(${100 - value}%)`,
+              },
+            }
+          }
+        ),
+      }
+
+      addUtilities(filterUtilities.desaturate, { variants: ['dark'] })
     }),
   ],
 }
