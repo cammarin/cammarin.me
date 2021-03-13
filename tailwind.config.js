@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   purge: [
@@ -42,5 +43,30 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addBase }) {
+      const webfonts = [
+        {
+          '@font-face': {
+            fontFamily: 'Inter',
+            fontStyle: 'normal',
+            fontWeight: '100 900',
+            fontDisplay: 'swap',
+            src: 'url("/fonts/Inter/Inter-roman.var.woff2") format("woff2")',
+          },
+        },
+        {
+          '@font-face': {
+            fontFamily: 'Inter',
+            fontStyle: 'italic',
+            fontWeight: '100 900',
+            fontDisplay: 'swap',
+            src: 'url("/fonts/Inter/Inter-italic.var.woff2") format("woff2")',
+          },
+        },
+      ]
+
+      addBase(webfonts)
+    }),
+  ],
 }

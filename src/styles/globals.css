@@ -2,24 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: swap;
-    src: url('/fonts/Inter/Inter-roman.var.woff2') format('woff2');
-  }
-
-  @font-face {
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 100 900;
-    font-display: swap;
-    src: url('/fonts/Inter/Inter-italic.var.woff2') format('woff2');
-  }
-}
-
 @layer utilities {
   @variants dark {
     .filter-desaturate-0 {
