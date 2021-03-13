@@ -6,7 +6,7 @@ const SubHeading = ({
 }: SubHeadingProps) => {
   return (
     <p
-      className={`${className} mb-20 text-xl sm:text-2xl text-neutral-400 lowercase tracking-tight dark:text-neutral-80`}
+      className={`${className} mb-20 text-xl text-neutral-400 lowercase tracking-tight dark:text-neutral-80 sm:text-2xl`}
       {...htmlParagraphProps}
     />
   )
