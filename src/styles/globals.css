@@ -20,11 +20,11 @@
   }
 
   body {
-    @apply text-light-mode-black;
+    @apply text-neutral-700;
     @apply tracking-normal;
-    @apply bg-light-mode-white;
-    @apply dark:text-dark-mode-white;
-    @apply dark:bg-dark-mode-black;
+    @apply bg-neutral-10;
+    @apply dark:text-neutral-30;
+    @apply dark:bg-neutral-900;
   }
 }
 
