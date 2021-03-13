@@ -17,7 +17,7 @@ const NavbarNavThemeChanger = ({
     <li>
       <button
         type="button"
-        className="p-3 rounded hover:bg-neutral-20 dark:hover:bg-neutral-700"
+        className="p-3 rounded hover:text-neutral-800 hover:bg-neutral-20 focus:outline-none focus-visible:text-neutral-800 focus-visible:bg-neutral-20 focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-1 focus-visible:ring-offset-neutral-10 dark:hover:text-neutral-10 dark:hover:bg-neutral-700 dark:focus-visible:text-neutral-10 dark:focus-visible:bg-neutral-700 dark:focus-visible:ring-neutral-80 dark:focus-visible:ring-offset-neutral-900"
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         {...htmlButtonProps}
       >
