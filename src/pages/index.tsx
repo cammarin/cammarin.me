@@ -7,7 +7,10 @@ const Home = () => {
   return (
     <Layout description="Homepage">
       <DisplayHeading>
-        Hi, I’m <GradientText>Carlos Marin</GradientText>
+        Hi, I’m{' '}
+        <GradientText className="glow glow-30 dark:glow-60">
+          Carlos Marin
+        </GradientText>
       </DisplayHeading>
 
       <SubHeading>Lead Information Designer + Developer @ Estadão</SubHeading>

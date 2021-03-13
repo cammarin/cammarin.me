@@ -10,7 +10,9 @@ const Guides = () => {
       description="Thoughts and tips about accessibility in data visualization."
     >
       <DisplayHeading>
-        <GradientText>Guides</GradientText>
+        <GradientText className="glow glow-30 dark:glow-60">
+          Guides
+        </GradientText>
       </DisplayHeading>
 
       <SubHeading>Make information accessible</SubHeading>
