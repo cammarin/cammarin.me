@@ -17,7 +17,14 @@ const NavbarBrand = ({
           text-xl
           font-medium
           leading-6
+          text-current
+          no-underline
           rounded
+          hover:text-current
+          focus-visible:text-current
+          dark:text-current
+          dark:hover:text-current
+          dark:focus-visible:text-current
         `}
         {...htmlAnchorProps}
       />

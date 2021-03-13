@@ -17,12 +17,15 @@ const NavbarNavLink = ({
             p-3
             w-20
             font-medium
+            text-current
             text-center
+            no-underline
             rounded
             hover:text-neutral-800
             hover:bg-neutral-20
             focus-visible:text-neutral-800
             focus-visible:bg-neutral-20
+            dark:text-current
             dark:hover:text-neutral-10
             dark:hover:bg-neutral-700
             dark:focus-visible:text-neutral-10
