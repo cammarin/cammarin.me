@@ -39,7 +39,7 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
             <li>
               <button
                 type="button"
-                className="p-3"
+                className="p-3 rounded hover:bg-neutral-20 dark:hover:bg-neutral-700"
                 onClick={() => toggleDark()}
               >
                 <svg
