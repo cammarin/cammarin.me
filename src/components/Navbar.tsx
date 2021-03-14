@@ -7,11 +7,9 @@ type NavbarProps = {
 
 const Navbar = ({ children }: NavbarProps) => {
   return (
-    <header className="py-4">
-      <nav className="flex justify-between" aria-label="Main navigation">
-        {children}
-      </nav>
-    </header>
+    <nav className="flex justify-between" aria-label="Main navigation">
+      {children}
+    </nav>
   )
 }
 
