@@ -15,8 +15,8 @@ const NavbarNavLink = ({
           className={Utils.minifyString(`
             ${className}
             inline-block
-            p-3
             w-20
+            p-3
             font-medium
             text-current
             text-center
