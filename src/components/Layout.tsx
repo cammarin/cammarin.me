@@ -23,7 +23,7 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
 
       <Skippy href="#content">Skip to main content</Skippy>
 
-      <div className="max-w-3xl px-6 mx-auto">
+      <div className="page grid max-w-3xl min-h-screen px-6 mx-auto">
         <header id="masthead" className="py-4">
           <Navbar>
             <Navbar.Brand>@cammarin</Navbar.Brand>
