@@ -39,7 +39,7 @@
 @layer utilities {
   .focus-ring {
     @apply focus:outline-none;
-    @apply focus-visible:ring-2;
+    @apply focus-visible:ring-1;
     @apply focus-visible:ring-neutral-400;
     @apply focus-visible:ring-offset-1;
     @apply focus-visible:ring-offset-neutral-10;
