@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Skippy from '@/components/Skippy'
+import Utils from '@/lib/utils'
 
 type LayoutProps = {
   title?: string
@@ -23,8 +24,22 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
 
       <Skippy href="#content">Skip to main content</Skippy>
 
-      <div className="page grid max-w-3xl min-h-screen px-6 mx-auto">
-        <header id="masthead" className="py-4">
+      <div
+        className={Utils.minifyString(`
+          page
+          grid
+          gap-y-10
+          max-w-3xl
+          min-h-screen
+          mx-auto
+          xs-base:px-1.5
+          sm-mini:px-3.5
+          sm-base:px-3
+          sm-base:gap-y-12
+          sm-plus:px-5
+        `)}
+      >
+        <header id="masthead" className="py-3 sm-base:py-4">
           <Navbar>
             <Navbar.Brand>@cammarin</Navbar.Brand>
 
@@ -37,7 +52,7 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
           </Navbar>
         </header>
 
-        <main id="content" className="pt-14 px-3">
+        <main id="content" className="px-2.5 sm-base:px-3">
           {children}
         </main>
 

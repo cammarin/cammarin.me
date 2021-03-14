@@ -19,7 +19,7 @@ const NavbarNavThemeChanger = ({
       <button
         type="button"
         className={Utils.minifyString(`
-          p-3
+          p-2.5
           rounded
           hover:text-neutral-800
           hover:bg-neutral-20
@@ -29,6 +29,7 @@ const NavbarNavThemeChanger = ({
           dark:hover:bg-neutral-700
           dark:focus-visible:text-neutral-10
           dark:focus-visible:bg-neutral-700
+          sm-base:p-3
         `)}
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         aria-label={
@@ -39,7 +40,13 @@ const NavbarNavThemeChanger = ({
         {...htmlButtonProps}
       >
         <svg
-          className="w-6 h-6 dark:filter-desaturate-30"
+          className={Utils.minifyString(`
+            w-5
+            h-5
+            dark:filter-desaturate-30
+            sm-base:w-6
+            sm-base:h-6
+          `)}
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           width="24"

@@ -12,7 +12,7 @@ const Skippy = ({ children, ...htmlAnchorProps }: SkippyProps) => {
         className={Utils.minifyString(`
           relative
           block
-          p-3
+          p-2.5
           font-semibold
           text-neutral-10
           text-center
@@ -25,6 +25,10 @@ const Skippy = ({ children, ...htmlAnchorProps }: SkippyProps) => {
           dark:from-yellow-400
           dark:to-pink-500
           dark:filter-desaturate-30
+          xs-base:px-5
+          sm-mini:px-6
+          sm-base:px-8
+          sm-base:py-3
         `)}
       >
         {children}

@@ -9,11 +9,15 @@ class Document extends NextDocument {
 
         <body
           className={Utils.minifyString(`
+            overflow-x-hidden
+            text-sm
             text-neutral-700
-            tracking-normal
+            tracking-wide
             bg-neutral-10
             dark:text-neutral-30
             dark:bg-neutral-900
+            sm-base:text-base
+            sm-base:tracking-normal
           `)}
         >
           <Main />

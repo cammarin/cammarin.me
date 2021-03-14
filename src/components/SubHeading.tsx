@@ -10,13 +10,13 @@ const SubHeading = ({
     <p
       className={Utils.minifyString(`
         ${className}
-        mb-20
         text-xl
         text-neutral-400
         lowercase
         tracking-tight
         dark:text-neutral-60
-        sm:text-2xl
+        sm-base:text-2xl
+        sm-base:tracking-tighter
       `)}
       {...htmlParagraphProps}
     />

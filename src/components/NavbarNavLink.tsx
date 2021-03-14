@@ -9,15 +9,14 @@ const NavbarNavLink = ({
   ...htmlAnchorProps
 }: NavbarNavLinkProps) => {
   return (
-    <li>
+    <li className="mr-0.5">
       <Link href={href}>
         <a
           className={Utils.minifyString(`
             ${className}
-            inline-block
-            w-20
-            p-3
-            mr-1
+            block
+            w-14
+            py-2.5
             font-medium
             text-current
             text-center
@@ -32,6 +31,9 @@ const NavbarNavLink = ({
             dark:hover:bg-neutral-700
             dark:focus-visible:text-neutral-10
             dark:focus-visible:bg-neutral-700
+            xs-plus:w-16
+            sm-base:w-20
+            sm-base:py-3
           `)}
           {...htmlAnchorProps}
         />
