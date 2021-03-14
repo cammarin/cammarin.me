@@ -1,32 +1,32 @@
 type SkippyProps = JSX.IntrinsicElements['a']
 
-const Skippy = ({
-  className = '',
-  children,
-  ...htmlAnchorProps
-}: SkippyProps) => {
+const Skippy = ({ children, ...htmlAnchorProps }: SkippyProps) => {
   return (
     <a
-      className={`
-        ${className}
+      className="block no-underline sr-only focus:ring-0 focus:ring-offset-0 focus:not-sr-only"
+      {...htmlAnchorProps}
+    >
+      <span
+        className={`
+        relative
         block
+        p-3
         font-semibold
-        text-light-mode-white
+        text-neutral-10
         text-center
         bg-gradient-to-br
         from-green-400
         to-blue-500
-        sr-only
-        focus:outline-none
-        focus:not-sr-only
-        dark:text-dark-mode-black
+        glow-md
+        glow-100
+        dark:text-neutral-900
         dark:from-yellow-400
         dark:to-pink-500
         dark:filter-desaturate-30
       `}
-      {...htmlAnchorProps}
-    >
-      <span className="block py-5 mb-14">{children}</span>
+      >
+        {children}
+      </span>
     </a>
   )
 }
