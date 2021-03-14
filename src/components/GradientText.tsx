@@ -1,3 +1,5 @@
+import Utils from '@/lib/utils'
+
 type GradientTextProps = JSX.IntrinsicElements['span']
 
 const GradientText = ({
@@ -8,7 +10,7 @@ const GradientText = ({
   // The `data-content` attribute is necessary for glow effect.
   return (
     <span
-      className={`
+      className={Utils.minifyString(`
         ${className}
         relative
         inline-block
@@ -20,7 +22,7 @@ const GradientText = ({
         dark:from-yellow-400
         dark:to-pink-500
         dark:filter-desaturate-30
-      `}
+      `)}
       {...htmlSpanProps}
       data-content={children}
     >

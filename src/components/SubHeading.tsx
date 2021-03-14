@@ -1,3 +1,5 @@
+import Utils from '@/lib/utils'
+
 type SubHeadingProps = JSX.IntrinsicElements['p']
 
 const SubHeading = ({
@@ -6,7 +8,7 @@ const SubHeading = ({
 }: SubHeadingProps) => {
   return (
     <p
-      className={`
+      className={Utils.minifyString(`
         ${className}
         mb-20
         text-xl
@@ -15,7 +17,7 @@ const SubHeading = ({
         tracking-tight
         dark:text-neutral-60
         sm:text-2xl
-      `}
+      `)}
       {...htmlParagraphProps}
     />
   )

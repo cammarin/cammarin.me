@@ -1,3 +1,5 @@
+import Utils from '@/lib/utils'
+
 type SkippyProps = JSX.IntrinsicElements['a']
 
 const Skippy = ({ children, ...htmlAnchorProps }: SkippyProps) => {
@@ -7,7 +9,7 @@ const Skippy = ({ children, ...htmlAnchorProps }: SkippyProps) => {
       {...htmlAnchorProps}
     >
       <span
-        className={`
+        className={Utils.minifyString(`
         relative
         block
         p-3
@@ -23,7 +25,7 @@ const Skippy = ({ children, ...htmlAnchorProps }: SkippyProps) => {
         dark:from-yellow-400
         dark:to-pink-500
         dark:filter-desaturate-30
-      `}
+      `)}
       >
         {children}
       </span>

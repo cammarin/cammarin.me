@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Utils from '@/lib/utils'
 
 // Omit `href` because it's hard-coded.
 type NavbarBrandProps = Omit<JSX.IntrinsicElements['a'], 'href'>
@@ -10,7 +11,7 @@ const NavbarBrand = ({
   return (
     <Link href="/">
       <a
-        className={`
+        className={Utils.minifyString(`
           ${className}
           inline-block
           p-3
@@ -25,7 +26,7 @@ const NavbarBrand = ({
           dark:text-current
           dark:hover:text-current
           dark:focus-visible:text-current
-        `}
+        `)}
         {...htmlAnchorProps}
       />
     </Link>

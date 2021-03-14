@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Utils from '@/lib/utils'
 
 type NavbarNavLinkProps = JSX.IntrinsicElements['a']
 
@@ -11,7 +12,7 @@ const NavbarNavLink = ({
     <li>
       <Link href={href}>
         <a
-          className={`
+          className={Utils.minifyString(`
             ${className}
             inline-block
             p-3
@@ -30,7 +31,7 @@ const NavbarNavLink = ({
             dark:hover:bg-neutral-700
             dark:focus-visible:text-neutral-10
             dark:focus-visible:bg-neutral-700
-          `}
+          `)}
           {...htmlAnchorProps}
         />
       </Link>

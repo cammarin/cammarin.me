@@ -1,3 +1,5 @@
+import Utils from '@/lib/utils'
+
 type DisplayHeadingProps = JSX.IntrinsicElements['h1']
 
 const DisplayHeading = ({
@@ -6,14 +8,14 @@ const DisplayHeading = ({
 }: DisplayHeadingProps) => {
   return (
     <h1
-      className={`
+      className={Utils.minifyString(`
         ${className}
         mb-1
         text-5xl
         font-bold
         tracking-tight
         sm:text-6xl
-      `}
+      `)}
       {...htmlHeadingProps}
     />
   )

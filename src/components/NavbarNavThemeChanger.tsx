@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
+import Utils from '@/lib/utils'
 
 // Omit `type` because it's hard-coded.
 type NavbarNavThemeChangerProps = Omit<JSX.IntrinsicElements['button'], 'type'>
@@ -17,7 +18,7 @@ const NavbarNavThemeChanger = ({
     <li>
       <button
         type="button"
-        className={`
+        className={Utils.minifyString(`
           p-3
           rounded
           hover:text-neutral-800
@@ -28,7 +29,7 @@ const NavbarNavThemeChanger = ({
           dark:hover:bg-neutral-700
           dark:focus-visible:text-neutral-10
           dark:focus-visible:bg-neutral-700
-        `}
+        `)}
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         aria-label={
           mounted
