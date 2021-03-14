@@ -17,6 +17,7 @@ const NavbarNavLink = ({
             inline-block
             w-20
             p-3
+            mr-1
             font-medium
             text-current
             text-center
