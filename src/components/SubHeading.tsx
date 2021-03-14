@@ -13,7 +13,7 @@ const SubHeading = ({
         text-neutral-400
         lowercase
         tracking-tight
-        dark:text-neutral-80
+        dark:text-neutral-60
         sm:text-2xl
       `}
       {...htmlParagraphProps}
