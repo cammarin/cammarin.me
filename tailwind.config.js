@@ -35,8 +35,12 @@ module.exports = {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       letterSpacing: {
-        tight: '-0.0225em',
+        tighter: '-0.0225em',
+        tight: '-0.015em',
         normal: '-0.0125em',
+        wide: '-0.005em',
+        wider: '0em',
+        widest: '0.0125em',
       },
     },
     screens: {
