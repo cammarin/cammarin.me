@@ -39,6 +39,23 @@ module.exports = {
         normal: '-0.0125em',
       },
     },
+    screens: {
+      'xs-mini': '320px',
+      'xs-base': '360px',
+      'xs-plus': '400px',
+      'sm-mini': '480px',
+      'sm-base': '600px',
+      'sm-plus': '640px',
+      'md-mini': '720px',
+      'md-base': '768px',
+      'md-plus': '960px',
+      'lg-mini': '1024px',
+      'lg-base': '1200px',
+      'lg-plus': '1440px',
+      'xl-mini': '1536px',
+      'xl-base': '1920px',
+      'xl-plus': '2400px',
+    },
   },
   variants: {
     extend: {
