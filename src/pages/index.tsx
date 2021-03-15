@@ -12,7 +12,7 @@ const Home = () => {
       <Intro>
         <DisplayHeading>
           Hi, I’m{' '}
-          <GradientText className="glow glow-40 dark:glow-60">
+          <GradientText className="glow glow-opacity-40 dark:glow-opacity-60">
             Carlos Marin
           </GradientText>
         </DisplayHeading>
@@ -28,8 +28,8 @@ const Home = () => {
             <GradientText
               className={Utils.minifyString(`
                 glow
-                glow-25
-                dark:glow-40
+                glow-opacity-25
+                dark:glow-opacity-40
               `)}
             >
               More about me →
@@ -46,8 +46,8 @@ const Home = () => {
             <GradientText
               className={Utils.minifyString(`
                 glow
-                glow-25
-                dark:glow-40
+                glow-opacity-25
+                dark:glow-opacity-40
               `)}
             >
               Accessible dataviz →
@@ -72,8 +72,8 @@ const Home = () => {
             <GradientText
               className={Utils.minifyString(`
                 glow
-                glow-25
-                dark:glow-40
+                glow-opacity-25
+                dark:glow-opacity-40
               `)}
             >
               Check our works →

@@ -93,6 +93,28 @@ module.exports = {
     require('tailwindcss-filters'),
     plugin(
       function ({ addBase, addUtilities, e, theme, variants }) {
+        // Based on: https://github.com/tailwindlabs/tailwindcss/blob/master/src/util/nameClass.js
+        const asClass = (name) => {
+          return `.${e(name)}`
+        }
+
+        // Based on: https://github.com/tailwindlabs/tailwindcss/blob/master/src/util/nameClass.js
+        const nameClass = (classPrefix, key) => {
+          if (key.toUpperCase() === 'DEFAULT') {
+            return asClass(classPrefix)
+          }
+
+          if (key === '-') {
+            return asClass(`-${classPrefix}`)
+          }
+
+          if (key.startsWith('-')) {
+            return asClass(`-${classPrefix}${key}`)
+          }
+
+          return asClass(`${classPrefix}-${key}`)
+        }
+
         const webfonts = [
           {
             '@font-face': {
@@ -115,10 +137,56 @@ module.exports = {
         ]
 
         addBase(webfonts)
+
+        const glowOpacityUtilities = Object.entries(theme('glowOpacity')).map(
+          ([modifier, value]) => ({
+            [nameClass('glow-opacity', modifier)]: {
+              '&::before': {
+                opacity: value,
+              },
+            },
+          })
+        )
+
+        addUtilities(glowOpacityUtilities, variants('glowOpacity'))
+
+        const glowSizeUtilities = Object.entries(theme('glowSize')).map(
+          ([modifier, value]) => ({
+            [nameClass('glow', modifier)]: {
+              '&::before': {
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                zIndex: -1,
+                display: 'block',
+                width: '100%',
+                height: '100%',
+                content: 'attr(data-content)',
+                background: 'inherit',
+                filter: `blur(${value})`,
+              },
+            },
+          })
+        )
+
+        addUtilities(glowSizeUtilities, variants('glowSize'))
       },
       {
-        theme: {},
-        variants: {},
+        theme: {
+          glowOpacity: (theme) => theme('opacity'),
+          glowSize: {
+            sm: '2px',
+            DEFAULT: '3px',
+            md: '5px',
+            lg: '10px',
+            xl: '20px',
+            '2xl': '40px',
+          },
+        },
+        variants: {
+          glowOpacity: ['dark'],
+          glowSize: ['dark'],
+        },
       }
     ),
   ],

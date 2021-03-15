@@ -20,7 +20,6 @@ const Skippy = ({ children, ...htmlAnchorProps }: SkippyProps) => {
           from-green-400
           to-blue-500
           glow-md
-          glow-100
           dark:text-neutral-900
           dark:from-yellow-400
           dark:to-pink-500
