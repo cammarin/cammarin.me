@@ -73,43 +73,67 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ addBase, addUtilities }) {
-      const webfonts = [
-        {
-          '@font-face': {
-            fontFamily: 'Inter',
-            fontStyle: 'normal',
-            fontWeight: '100 900',
-            fontDisplay: 'swap',
-            src: 'url("/fonts/Inter/Inter-roman.var.woff2") format("woff2")',
+    plugin(
+      function ({ addBase, addUtilities, e, theme, variants }) {
+        const webfonts = [
+          {
+            '@font-face': {
+              fontFamily: 'Inter',
+              fontStyle: 'normal',
+              fontWeight: '100 900',
+              fontDisplay: 'swap',
+              src: 'url("/fonts/Inter/Inter-roman.var.woff2") format("woff2")',
+            },
           },
-        },
-        {
-          '@font-face': {
-            fontFamily: 'Inter',
-            fontStyle: 'italic',
-            fontWeight: '100 900',
-            fontDisplay: 'swap',
-            src: 'url("/fonts/Inter/Inter-italic.var.woff2") format("woff2")',
+          {
+            '@font-face': {
+              fontFamily: 'Inter',
+              fontStyle: 'italic',
+              fontWeight: '100 900',
+              fontDisplay: 'swap',
+              src: 'url("/fonts/Inter/Inter-italic.var.woff2") format("woff2")',
+            },
           },
-        },
-      ]
+        ]
 
-      addBase(webfonts)
+        addBase(webfonts)
 
-      const filterUtilities = {
-        desaturate: [0, 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100].map(
-          (value) => {
-            return {
-              [`.filter-desaturate-${value}`]: {
-                filter: `saturate(${100 - value}%)`,
-              },
-            }
+        const filterDesaturateUtilities = Object.entries(
+          theme('filter.desaturate')
+        ).map(([key, value]) => {
+          return {
+            [`.${e(`filter-desaturate-${key}`)}`]: {
+              filter: `saturate(${value})`,
+            },
           }
-        ),
-      }
+        })
 
-      addUtilities(filterUtilities.desaturate, { variants: ['dark'] })
-    }),
+        addUtilities(filterDesaturateUtilities, variants('filter'))
+      },
+      {
+        theme: {
+          filter: {
+            desaturate: {
+              0: '100%',
+              10: '90%',
+              20: '80%',
+              25: '75%',
+              30: '70%',
+              40: '60%',
+              50: '50%',
+              60: '40%',
+              70: '30%',
+              75: '25%',
+              80: '20%',
+              90: '10%',
+              100: '0%',
+            },
+          },
+        },
+        variants: {
+          filter: ['dark'],
+        },
+      }
+    ),
   ],
 }
