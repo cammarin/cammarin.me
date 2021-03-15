@@ -3,11 +3,10 @@ import Navbar from '@/components/Navbar'
 import Skippy from '@/components/Skippy'
 import Utils from '@/lib/utils'
 
-type LayoutProps = {
+type LayoutProps = React.PropsWithChildren<{
   title?: string
   description: string
-  children?: React.ReactNode
-}
+}>
 
 const Layout = ({ title = '', description, children }: LayoutProps) => {
   return (
@@ -40,7 +39,7 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
         `)}
       >
         <header id="masthead" className="py-3 sm-base:py-4">
-          <Navbar>
+          <Navbar aria-label="Main navigation">
             <Navbar.Brand>@cammarin</Navbar.Brand>
 
             <Navbar.Nav>

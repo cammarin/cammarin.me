@@ -1,15 +1,19 @@
 import NavbarBrand from '@/components/NavbarBrand'
 import NavbarNav from '@/components/NavbarNav'
+import Utils from '@/lib/utils'
 
-type NavbarProps = {
-  children?: React.ReactNode
-}
+type NavbarProps = JSX.IntrinsicElements['nav']
 
-const Navbar = ({ children }: NavbarProps) => {
+const Navbar = ({ className = '', ...htmlNavProps }: NavbarProps) => {
   return (
-    <nav className="flex justify-between" aria-label="Main navigation">
-      {children}
-    </nav>
+    <nav
+      className={Utils.minifyString(`
+        ${className}
+        flex
+        justify-between
+      `)}
+      {...htmlNavProps}
+    />
   )
 }
 
