@@ -81,6 +81,18 @@ module.exports = {
     extend: {
       backgroundColor: ['focus-visible'],
       filter: ['dark'],
+      glowOpacity: [
+        'hover',
+        'focus-visible',
+        'group-hover',
+        'group-focus-visible',
+      ],
+      glowSize: [
+        'hover',
+        'focus-visible',
+        'group-hover',
+        'group-focus-visible',
+      ],
       margin: ['last'],
       ringColor: ['focus-visible'],
       ringOffsetColor: ['focus-visible'],

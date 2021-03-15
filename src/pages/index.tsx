@@ -24,12 +24,18 @@ const Home = () => {
         I’m a former aspiring scientist who found his vocation in Information
         Design and programming.{' '}
         <Link href="/about">
-          <a className="mt-1 font-semibold whitespace-nowrap">
+          <a className="group mt-1 font-semibold whitespace-nowrap">
             <GradientText
               className={Utils.minifyString(`
                 glow
                 glow-opacity-25
+                group-hover:glow-md
+                group-hover:glow-opacity-60
+                group-focus-visible:glow-md
+                group-focus-visible:glow-opacity-60
                 dark:glow-opacity-40
+                dark:group-hover:glow-opacity-100
+                dark:group-focus-visible:glow-opacity-100
               `)}
             >
               More about me →
@@ -42,12 +48,18 @@ const Home = () => {
         My goal is to make information accessible to everyone and I write about
         it in data visualization.{' '}
         <Link href="/guides">
-          <a className="mt-1 font-semibold whitespace-nowrap">
+          <a className="group mt-1 font-semibold whitespace-nowrap">
             <GradientText
               className={Utils.minifyString(`
                 glow
                 glow-opacity-25
+                group-hover:glow-md
+                group-hover:glow-opacity-60
+                group-focus-visible:glow-md
+                group-focus-visible:glow-opacity-60
                 dark:glow-opacity-40
+                dark:group-hover:glow-opacity-100
+                dark:group-focus-visible:glow-opacity-100
               `)}
             >
               Accessible dataviz →
@@ -68,12 +80,18 @@ const Home = () => {
         </a>
         .{' '}
         <Link href="/works">
-          <a className="mt-1 font-semibold whitespace-nowrap">
+          <a className="group mt-1 font-semibold whitespace-nowrap">
             <GradientText
               className={Utils.minifyString(`
                 glow
                 glow-opacity-25
+                group-hover:glow-md
+                group-hover:glow-opacity-60
+                group-focus-visible:glow-md
+                group-focus-visible:glow-opacity-60
                 dark:glow-opacity-40
+                dark:group-hover:glow-opacity-100
+                dark:group-focus-visible:glow-opacity-100
               `)}
             >
               Check our works →
