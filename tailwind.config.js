@@ -91,6 +91,7 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-filters'),
+    require('tailwindcss-interaction-variants'),
     plugin(
       function ({ addBase, addUtilities, e, theme, variants }) {
         // Based on: https://github.com/tailwindlabs/tailwindcss/blob/master/src/util/nameClass.js
