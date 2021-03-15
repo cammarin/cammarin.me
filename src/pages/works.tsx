@@ -1,5 +1,6 @@
 import DisplayHeading from '@/components/DisplayHeading'
 import GradientText from '@/components/GradientText'
+import Intro from '@/components/Intro'
 import Layout from '@/components/Layout'
 import SubHeading from '@/components/SubHeading'
 
@@ -9,11 +10,15 @@ const Works = () => {
       title="Works"
       description="A list of projects I was responsible or part of."
     >
-      <DisplayHeading>
-        <GradientText className="glow glow-40 dark:glow-60">Works</GradientText>
-      </DisplayHeading>
+      <Intro>
+        <DisplayHeading>
+          <GradientText className="glow glow-40 dark:glow-60">
+            Works
+          </GradientText>
+        </DisplayHeading>
 
-      <SubHeading>A curated list of projects</SubHeading>
+        <SubHeading>A curated list of projects</SubHeading>
+      </Intro>
     </Layout>
   )
 }

@@ -1,5 +1,6 @@
 import DisplayHeading from '@/components/DisplayHeading'
 import GradientText from '@/components/GradientText'
+import Intro from '@/components/Intro'
 import Layout from '@/components/Layout'
 import SubHeading from '@/components/SubHeading'
 
@@ -9,11 +10,15 @@ const About = () => {
       title="About"
       description="More about the designer and developer Carlos Marin."
     >
-      <DisplayHeading>
-        <GradientText className="glow glow-40 dark:glow-60">About</GradientText>
-      </DisplayHeading>
+      <Intro>
+        <DisplayHeading>
+          <GradientText className="glow glow-40 dark:glow-60">
+            About
+          </GradientText>
+        </DisplayHeading>
 
-      <SubHeading>Education, jobs & interests</SubHeading>
+        <SubHeading>Education, jobs & interests</SubHeading>
+      </Intro>
     </Layout>
   )
 }

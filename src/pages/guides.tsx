@@ -1,5 +1,6 @@
 import DisplayHeading from '@/components/DisplayHeading'
 import GradientText from '@/components/GradientText'
+import Intro from '@/components/Intro'
 import Layout from '@/components/Layout'
 import SubHeading from '@/components/SubHeading'
 
@@ -9,13 +10,15 @@ const Guides = () => {
       title="Guides"
       description="Thoughts and tips about accessibility in data visualization."
     >
-      <DisplayHeading>
-        <GradientText className="glow glow-40 dark:glow-60">
-          Guides
-        </GradientText>
-      </DisplayHeading>
+      <Intro>
+        <DisplayHeading>
+          <GradientText className="glow glow-40 dark:glow-60">
+            Guides
+          </GradientText>
+        </DisplayHeading>
 
-      <SubHeading>Make information accessible</SubHeading>
+        <SubHeading>Make information accessible</SubHeading>
+      </Intro>
     </Layout>
   )
 }
