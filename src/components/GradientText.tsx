@@ -21,7 +21,7 @@ const GradientText = ({
         bg-clip-text
         dark:from-yellow-400
         dark:to-pink-500
-        dark:filter-desaturate-30
+        dark:filter-grayscale-30
       `)}
       {...htmlSpanProps}
       data-content={children}

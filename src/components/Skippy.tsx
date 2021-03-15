@@ -24,7 +24,7 @@ const Skippy = ({ children, ...htmlAnchorProps }: SkippyProps) => {
           dark:text-neutral-900
           dark:from-yellow-400
           dark:to-pink-500
-          dark:filter-desaturate-30
+          dark:filter-grayscale-30
           xs-base:px-5
           sm-mini:px-6
           sm-base:px-8

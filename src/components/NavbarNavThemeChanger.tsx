@@ -43,7 +43,7 @@ const NavbarNavThemeChanger = ({
           className={Utils.minifyString(`
             w-5
             h-5
-            dark:filter-desaturate-30
+            dark:filter-grayscale-30
             sm-base:w-6
             sm-base:h-6
           `)}

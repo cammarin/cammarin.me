@@ -43,6 +43,22 @@ module.exports = {
         widest: '0.0125em',
       },
     },
+    filter: {
+      'grayscale-0': 'grayscale(0)',
+      'grayscale-5': 'grayscale(0.05)',
+      'grayscale-10': 'grayscale(0.1)',
+      'grayscale-20': 'grayscale(0.2)',
+      'grayscale-25': 'grayscale(0.25)',
+      'grayscale-30': 'grayscale(0.3)',
+      'grayscale-40': 'grayscale(0.4)',
+      'grayscale-50': 'grayscale(0.5)',
+      'grayscale-60': 'grayscale(0.6)',
+      'grayscale-70': 'grayscale(0.7)',
+      'grayscale-75': 'grayscale(0.75)',
+      'grayscale-80': 'grayscale(0.8)',
+      'grayscale-90': 'grayscale(0.9)',
+      'grayscale-100': 'grayscale(1)',
+    },
     screens: {
       'xs-mini': '320px',
       'xs-base': '360px',
@@ -64,6 +80,7 @@ module.exports = {
   variants: {
     extend: {
       backgroundColor: ['focus-visible'],
+      filter: ['dark'],
       margin: ['last'],
       ringColor: ['focus-visible'],
       ringOffsetColor: ['focus-visible'],
@@ -73,6 +90,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwindcss-filters'),
     plugin(
       function ({ addBase, addUtilities, e, theme, variants }) {
         const webfonts = [
@@ -97,42 +115,10 @@ module.exports = {
         ]
 
         addBase(webfonts)
-
-        const filterDesaturateUtilities = Object.entries(
-          theme('filter.desaturate')
-        ).map(([key, value]) => {
-          return {
-            [`.${e(`filter-desaturate-${key}`)}`]: {
-              filter: `saturate(${value})`,
-            },
-          }
-        })
-
-        addUtilities(filterDesaturateUtilities, variants('filter'))
       },
       {
-        theme: {
-          filter: {
-            desaturate: {
-              0: '100%',
-              10: '90%',
-              20: '80%',
-              25: '75%',
-              30: '70%',
-              40: '60%',
-              50: '50%',
-              60: '40%',
-              70: '30%',
-              75: '25%',
-              80: '20%',
-              90: '10%',
-              100: '0%',
-            },
-          },
-        },
-        variants: {
-          filter: ['dark'],
-        },
+        theme: {},
+        variants: {},
       }
     ),
   ],
