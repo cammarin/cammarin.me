@@ -30,6 +30,11 @@
     text-decoration-thickness: 0.125em;
   }
 
+  p {
+    @apply mb-3 sm-base:mb-4;
+    @apply last:mb-0;
+  }
+
   .page {
     grid-template-rows: min-content 1fr min-content;
     grid-template-columns: 100%;

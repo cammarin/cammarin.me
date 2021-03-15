@@ -64,6 +64,7 @@ module.exports = {
   variants: {
     extend: {
       backgroundColor: ['focus-visible'],
+      margin: ['last'],
       ringColor: ['focus-visible'],
       ringOffsetColor: ['focus-visible'],
       ringOffsetWidth: ['focus-visible'],
