@@ -1,10 +1,9 @@
-import Link from 'next/link'
 import DisplayHeading from '@/components/DisplayHeading'
+import GradientLink from '@/components/GradientLink'
 import GradientText from '@/components/GradientText'
 import Intro from '@/components/Intro'
 import Layout from '@/components/Layout'
 import SubHeading from '@/components/SubHeading'
-import Utils from '@/lib/utils'
 
 const Home = () => {
   return (
@@ -23,49 +22,13 @@ const Home = () => {
       <p className="mb-10 sm-base:mb-12">
         I’m a former aspiring scientist who found his vocation in Information
         Design and programming.{' '}
-        <Link href="/about">
-          <a className="group mt-1 font-semibold whitespace-nowrap">
-            <GradientText
-              className={Utils.minifyString(`
-                glow
-                glow-opacity-25
-                group-hover:glow-md
-                group-hover:glow-opacity-60
-                group-focus-visible:glow-md
-                group-focus-visible:glow-opacity-60
-                dark:glow-opacity-40
-                dark:group-hover:glow-opacity-100
-                dark:group-focus-visible:glow-opacity-100
-              `)}
-            >
-              More about me →
-            </GradientText>
-          </a>
-        </Link>
+        <GradientLink href="/about">More about me →</GradientLink>
       </p>
 
       <p className="mb-10 sm-base:mb-12">
         My goal is to make information accessible to everyone and I write about
         it in data visualization.{' '}
-        <Link href="/guides">
-          <a className="group mt-1 font-semibold whitespace-nowrap">
-            <GradientText
-              className={Utils.minifyString(`
-                glow
-                glow-opacity-25
-                group-hover:glow-md
-                group-hover:glow-opacity-60
-                group-focus-visible:glow-md
-                group-focus-visible:glow-opacity-60
-                dark:glow-opacity-40
-                dark:group-hover:glow-opacity-100
-                dark:group-focus-visible:glow-opacity-100
-              `)}
-            >
-              Accessible dataviz →
-            </GradientText>
-          </a>
-        </Link>
+        <GradientLink href="/guides">Accessible dataviz →</GradientLink>
       </p>
 
       <p>
@@ -78,26 +41,7 @@ const Home = () => {
         >
           <span className="font-medium">Estadão</span>
         </a>
-        .{' '}
-        <Link href="/works">
-          <a className="group mt-1 font-semibold whitespace-nowrap">
-            <GradientText
-              className={Utils.minifyString(`
-                glow
-                glow-opacity-25
-                group-hover:glow-md
-                group-hover:glow-opacity-60
-                group-focus-visible:glow-md
-                group-focus-visible:glow-opacity-60
-                dark:glow-opacity-40
-                dark:group-hover:glow-opacity-100
-                dark:group-focus-visible:glow-opacity-100
-              `)}
-            >
-              Check our works →
-            </GradientText>
-          </a>
-        </Link>
+        . <GradientLink href="/works">Check our works →</GradientLink>
       </p>
     </Layout>
   )
