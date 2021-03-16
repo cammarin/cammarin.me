@@ -183,6 +183,21 @@ module.exports = {
         )
 
         addUtilities(glowSizeUtilities, variants('glowSize'))
+
+        // Trick to fix viewport units on mobile.
+        // The custom property is set with JS on window resize.
+        const heightUtilities = [
+          {
+            '.h-screen': {
+              height: 'calc(var(--vh, 1vh) * 100)',
+            },
+            '.min-h-screen': {
+              minHeight: 'calc(var(--vh, 1vh) * 100)',
+            },
+          },
+        ]
+
+        addUtilities(heightUtilities, variants('height'))
       },
       {
         theme: {

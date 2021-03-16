@@ -2,12 +2,21 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'next-themes'
 import { AppProvider } from '@/components/AppContext'
+import { useWindowDimensions } from '@/hooks/useWindowDimensions'
 import '@/styles/globals.css'
 
 const App = ({
   Component,
   pageProps,
 }: AppProps & { Component: { theme?: string } }) => {
+  const { height: windowHeight } = useWindowDimensions()
+
+  if (windowHeight) {
+    const vh = windowHeight * 0.01
+
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+  }
+
   return (
     <>
       <Head>
