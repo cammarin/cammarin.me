@@ -16,7 +16,13 @@ const Home = () => {
           </GradientText>
         </DisplayHeading>
 
-        <SubHeading>Lead Information Designer+Developer at Estadão</SubHeading>
+        <SubHeading>
+          Lead Information{' '}
+          <span className="break-words">Designer+Developer</span> at Estadão{' '}
+          <span className="sr-only xs-plus:not-sr-only sm-base:sr-only">
+            newsroom
+          </span>
+        </SubHeading>
       </Intro>
 
       <p className="mb-10 sm-base:mb-12">
