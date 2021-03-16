@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Skippy from '@/components/Skippy'
+import Socialbar from '@/components/Socialbar'
 import Utils from '@/lib/utils'
 
 type LayoutProps = React.PropsWithChildren<{
@@ -55,7 +56,33 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
           {children}
         </main>
 
-        <footer id="colophon"></footer>
+        <footer
+          id="colophon"
+          className={Utils.minifyString(`
+            flex
+            justify-between
+            px-1.5
+            py-4
+            sm-base:px-1
+            sm-base:py-5
+          `)}
+        >
+          <Socialbar aria-label="Social links">
+            <Socialbar.Nav>
+              <Socialbar.Nav.Link site="github" />
+              <Socialbar.Nav.Link site="linkedin" />
+              <Socialbar.Nav.Link site="behance" />
+            </Socialbar.Nav>
+          </Socialbar>
+
+          <Socialbar aria-label="Contact">
+            <Socialbar.Nav>
+              <Socialbar.Nav.Link site="email" />
+              <Socialbar.Nav.Link site="telegram" />
+              <Socialbar.Nav.Link site="whatsapp" />
+            </Socialbar.Nav>
+          </Socialbar>
+        </footer>
       </div>
     </>
   )
