@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useContext } from 'react'
 import { useTheme } from 'next-themes'
+import AppContext from '@/components/AppContext'
 import Utils from '@/lib/utils'
 
 // Omit `type` because it's hard-coded.
@@ -9,10 +10,9 @@ const NavbarNavThemeChanger = ({
   className = '',
   ...htmlButtonProps
 }: NavbarNavThemeChangerProps) => {
-  const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
-  useEffect(() => setMounted(true), [])
+  const { mounted } = useContext(AppContext)
 
   return (
     <li>
