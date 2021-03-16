@@ -36,6 +36,7 @@ const Home = () => {
         Department of{' '}
         <a
           href="https://estadao.com.br"
+          hrefLang="pt-BR"
           target="_blank"
           rel="noopener noreferrer"
         >
