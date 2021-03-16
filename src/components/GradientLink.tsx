@@ -23,7 +23,6 @@ const GradientLink = ({
             group
             mt-1
             font-semibold
-            whitespace-nowrap
           `)}
           target="_blank"
           rel="noopener noreferrer"

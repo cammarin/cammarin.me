@@ -16,19 +16,33 @@ const Home = () => {
           </GradientText>
         </DisplayHeading>
 
-        <SubHeading>Lead Information Designer + Developer @ Estadão</SubHeading>
+        <SubHeading>Lead Information Designer+Developer at Estadão</SubHeading>
       </Intro>
 
       <p className="mb-10 sm-base:mb-12">
         I’m a former aspiring scientist who found his vocation in Information
         Design and programming.{' '}
-        <GradientLink href="/about">More about me →</GradientLink>
+        <span className="block">
+          <GradientLink
+            href="/about"
+            className="inline-block whitespace-nowrap"
+          >
+            More about me →
+          </GradientLink>
+        </span>
       </p>
 
       <p className="mb-10 sm-base:mb-12">
         My goal is to make information accessible to everyone and I write about
         it in data visualization.{' '}
-        <GradientLink href="/guides">Accessible dataviz →</GradientLink>
+        <span className="block">
+          <GradientLink
+            href="/guides"
+            className="inline-block whitespace-nowrap"
+          >
+            Accessible dataviz →
+          </GradientLink>
+        </span>
       </p>
 
       <p>
@@ -42,7 +56,15 @@ const Home = () => {
         >
           <span className="font-medium">Estadão</span>
         </a>
-        . <GradientLink href="/works">Check our works →</GradientLink>
+        .{' '}
+        <span className="block">
+          <GradientLink
+            href="/works"
+            className="inline-block whitespace-nowrap"
+          >
+            Check our works →
+          </GradientLink>
+        </span>
       </p>
     </Layout>
   )
