@@ -29,10 +29,7 @@ const Home = () => {
         I’m a former aspiring scientist who found his vocation in Information
         Design and programming.{' '}
         <span className="block">
-          <GradientLink
-            href="/about"
-            className="inline-block text-lg whitespace-nowrap"
-          >
+          <GradientLink href="/about" className="inline-block text-lg">
             More about me →
           </GradientLink>
         </span>
@@ -42,10 +39,7 @@ const Home = () => {
         My goal is to make information accessible to everyone and I write about
         it in data visualization.{' '}
         <span className="block">
-          <GradientLink
-            href="/guides"
-            className="inline-block text-lg whitespace-nowrap"
-          >
+          <GradientLink href="/guides" className="inline-block text-lg">
             Accessible dataviz →
           </GradientLink>
         </span>
@@ -64,10 +58,7 @@ const Home = () => {
         </a>
         .{' '}
         <span className="block">
-          <GradientLink
-            href="/works"
-            className="inline-block text-lg whitespace-nowrap"
-          >
+          <GradientLink href="/works" className="inline-block text-lg">
             Check our works →
           </GradientLink>
         </span>
