@@ -31,7 +31,7 @@ const Home = () => {
         <span className="block">
           <GradientLink
             href="/about"
-            className="inline-block whitespace-nowrap"
+            className="inline-block text-lg whitespace-nowrap"
           >
             More about me →
           </GradientLink>
@@ -44,7 +44,7 @@ const Home = () => {
         <span className="block">
           <GradientLink
             href="/guides"
-            className="inline-block whitespace-nowrap"
+            className="inline-block text-lg whitespace-nowrap"
           >
             Accessible dataviz →
           </GradientLink>
@@ -66,7 +66,7 @@ const Home = () => {
         <span className="block">
           <GradientLink
             href="/works"
-            className="inline-block whitespace-nowrap"
+            className="inline-block text-lg whitespace-nowrap"
           >
             Check our works →
           </GradientLink>

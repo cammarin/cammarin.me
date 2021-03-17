@@ -22,7 +22,7 @@ const GradientLink = ({
             ${className}
             group
             mt-1
-            font-semibold
+            font-medium
           `)}
           target="_blank"
           rel="noopener noreferrer"
@@ -51,8 +51,7 @@ const GradientLink = ({
               ${className}
               group
               mt-1
-              font-semibold
-              whitespace-nowrap
+              font-medium
             `)}
             {...htmlAnchorProps}
           >
