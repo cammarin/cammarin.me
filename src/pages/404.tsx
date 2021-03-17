@@ -22,7 +22,10 @@ const Http404 = () => {
         The resource you are looking for has not been found or probably no
         longer exists at this place.{' '}
         <span className="block">
-          <GradientLink href="/" className="inline-block whitespace-nowrap">
+          <GradientLink
+            href="/"
+            className="inline-block text-lg whitespace-nowrap"
+          >
             Back to home →
           </GradientLink>
         </span>
