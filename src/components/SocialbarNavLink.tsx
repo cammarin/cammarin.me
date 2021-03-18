@@ -70,6 +70,13 @@ const SocialbarNavLink = ({
           ${className}
           block
           p-1
+          text-neutral-90
+          rounded-sm
+          hover:text-current
+          focus-visible:text-current
+          dark:text-neutral-300
+          dark:hover:text-current
+          dark:focus-visible:text-current
         `)}
         href={href}
         aria-label={name}
