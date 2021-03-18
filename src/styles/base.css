@@ -20,8 +20,39 @@
     text-decoration-thickness: 0.125em;
   }
 
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply mb-4;
+  }
+
+  h1 {
+    @apply text-5xl;
+    @apply font-bold;
+    @apply sm-base:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+    @apply font-semibold;
+    @apply sm-base:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl;
+    @apply font-semibold;
+    @apply sm-base:text-2xl;
+  }
+
+  h4 {
+    @apply text-base;
+    @apply font-semibold;
+    @apply sm-base:text-lg;
+  }
+
   p {
-    @apply mb-3 sm-base:mb-4;
+    @apply mb-4;
     @apply last:mb-0;
   }
 }

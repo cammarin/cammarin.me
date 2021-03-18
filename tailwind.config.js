@@ -34,6 +34,99 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
+      fontSize: {
+        tiny: [
+          '0.625rem', // 10px
+          {
+            letterSpacing: '0.0125em', // widest
+            lineHeight: '0.75rem', // 12 px
+          },
+        ],
+        xs: [
+          '0.75rem', // 12px
+          {
+            letterSpacing: '0em', // wider
+            lineHeight: '1rem', // 16px
+          },
+        ],
+        sm: [
+          '0.875rem', // 14px
+          {
+            letterSpacing: '-0.005em', // wide
+            lineHeight: '1.25rem', // 20px
+          },
+        ],
+        base: [
+          '1rem', // 16px
+          {
+            letterSpacing: '-0.0125em', // normal
+            lineHeight: 1.5, // 24px
+          },
+        ],
+        lg: [
+          '1.125rem', // 18px
+          {
+            letterSpacing: '-0.015em', // tight
+            lineHeight: '1.75rem', // 28px
+          },
+        ],
+        xl: [
+          '1.25rem', // 20px
+          {
+            letterSpacing: '-0.015em', // tight
+            lineHeight: '1.75rem', // 28px
+          },
+        ],
+        '2xl': [
+          '1.5rem', // 24px
+          {
+            letterSpacing: '-0.0225em', // tighter
+            lineHeight: '2rem', // 32px
+          },
+        ],
+        '3xl': [
+          '1.75rem', // 28px
+          {
+            letterSpacing: '-0.0225em', // tighter
+            lineHeight: '2.25rem', // 36px
+          },
+        ],
+        '4xl': [
+          '2rem', // 32px
+          {
+            letterSpacing: '-0.0225em', // tighter
+            lineHeight: '2.5rem', // 40px
+          },
+        ],
+        '5xl': [
+          '2.25rem', // 36px
+          {
+            letterSpacing: '-0.0225em', // tighter
+            lineHeight: '2.5rem', // 40px
+          },
+        ],
+        '6xl': [
+          '2.625rem', // 42px
+          {
+            letterSpacing: '-0.0225em', // tighter
+            lineHeight: '3rem', // 48px
+          },
+        ],
+        '7xl': [
+          '3rem', // 48px
+          {
+            letterSpacing: '-0.0225em', // tighter
+            lineHeight: 1, // 48px
+          },
+        ],
+        '8xl': [
+          '3.75rem', // 60px
+          {
+            letterSpacing: '-0.0225em', // tighter
+            lineHeight: 1, // 60px
+          },
+        ],
+      },
       letterSpacing: {
         tighter: '-0.0225em',
         tight: '-0.015em',
