@@ -3,7 +3,9 @@ import Head from 'next/head'
 import { ThemeProvider } from 'next-themes'
 import { AppProvider } from '@/components/AppContext'
 import { useWindowDimensions } from '@/hooks/useWindowDimensions'
-import '@/styles/globals.css'
+import '@/styles/base.css'
+import '@/styles/components.css'
+import '@/styles/utilities.css'
 
 const App = ({
   Component,

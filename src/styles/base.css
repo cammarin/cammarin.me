@@ -1,0 +1,27 @@
+@tailwind base;
+
+@layer base {
+  a {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.125em;
+
+    @apply text-neutral-300;
+    @apply rounded-sm;
+    @apply hover:text-neutral-900;
+    @apply focus-visible:text-neutral-900;
+    @apply dark:text-neutral-50;
+    @apply dark:hover:text-neutral-10;
+    @apply dark:focus-visible:text-neutral-10;
+  }
+
+  a:hover,
+  a:focus-visible {
+    text-decoration-thickness: 0.125em;
+  }
+
+  p {
+    @apply mb-3 sm-base:mb-4;
+    @apply last:mb-0;
+  }
+}
