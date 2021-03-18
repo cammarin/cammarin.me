@@ -11,7 +11,7 @@ const Home = () => {
       <Intro>
         <DisplayHeading>
           Hi, I’m{' '}
-          <GradientText className="glow glow-opacity-40 dark:glow-opacity-60">
+          <GradientText className="glow-lg glow-opacity-25 dark:glow-opacity-30">
             Carlos Marin
           </GradientText>
         </DisplayHeading>

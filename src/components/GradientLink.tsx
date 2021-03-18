@@ -63,7 +63,7 @@ const GradientLink = ({
                 group-hover:glow-opacity-60
                 group-focus-visible:glow-md
                 group-focus-visible:glow-opacity-60
-                dark:glow-opacity-40
+                dark:glow-opacity-30
                 dark:group-hover:glow-opacity-100
                 dark:group-focus-visible:glow-opacity-100
               `)}

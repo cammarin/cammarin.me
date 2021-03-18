@@ -261,8 +261,8 @@ module.exports = {
             [nameClass('glow', modifier)]: {
               '&::before': {
                 position: 'absolute',
-                top: 0,
-                left: 0,
+                top: '0.05em',
+                left: '0.05em',
                 zIndex: -1,
                 display: 'block',
                 width: '100%',
@@ -270,6 +270,7 @@ module.exports = {
                 content: 'attr(data-content)',
                 background: 'inherit',
                 filter: `blur(${value})`,
+                backgroundBlendMode: 'multiply',
               },
             },
           })
