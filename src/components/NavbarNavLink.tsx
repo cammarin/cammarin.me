@@ -21,7 +21,6 @@ const NavbarNavLink = ({
             font-medium
             text-current
             text-center
-            tracking-wide
             no-underline
             rounded
             hover:text-neutral-800
@@ -37,7 +36,6 @@ const NavbarNavLink = ({
             sm-base:w-20
             sm-base:py-3
             sm-base:text-base
-            sm-base:tracking-normal
           `)}
           {...htmlAnchorProps}
         />

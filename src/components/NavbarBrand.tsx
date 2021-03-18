@@ -21,7 +21,6 @@ const NavbarBrand = ({
           leading-5
           text-current
           no-underline
-          tracking-normal
           rounded
           hover:text-current
           focus-visible:text-current
@@ -30,7 +29,6 @@ const NavbarBrand = ({
           dark:focus-visible:text-current
           xs-base:text-lg
           xs-base:leading-5
-          xs-base:tracking-tight
           sm-base:p-3
           sm-base:text-xl
           sm-base:leading-6

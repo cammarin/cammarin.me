@@ -10,8 +10,8 @@ class Document extends NextDocument {
         <body
           className={Utils.minifyString(`
             overflow-x-hidden
+            text-base
             text-neutral-700
-            tracking-normal
             bg-neutral-10
             dark:text-neutral-30
             dark:bg-neutral-900
