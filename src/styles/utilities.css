@@ -13,12 +13,16 @@
 
 @layer utilities {
   .focus-ring {
-    @apply focus:outline-none;
     @apply focus-visible:ring-1;
     @apply focus-visible:ring-neutral-400;
     @apply focus-visible:ring-offset-1;
     @apply focus-visible:ring-offset-neutral-10;
     @apply dark:focus-visible:ring-neutral-80;
     @apply dark:focus-visible:ring-offset-neutral-900;
+  }
+
+  .focus-ring:focus:not(:focus-visible),
+  .focus-ring:focus:not(.focus-visible) {
+    outline: none;
   }
 }
