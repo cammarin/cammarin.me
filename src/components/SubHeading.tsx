@@ -11,8 +11,8 @@ const SubHeading = ({
       className={Utils.minifyString(`
         ${className}
         text-xl
-        text-neutral-400
-        dark:text-neutral-60
+        text-neutral-200
+        dark:text-neutral-80
         sm-base:text-2xl
       `)}
       {...htmlParagraphProps}

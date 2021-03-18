@@ -74,7 +74,7 @@ const SocialbarNavLink = ({
           rounded-sm
           hover:text-current
           focus-visible:text-current
-          dark:text-neutral-300
+          dark:text-neutral-100
           dark:hover:text-current
           dark:focus-visible:text-current
         `)}

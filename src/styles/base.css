@@ -25,6 +25,8 @@
   h3,
   h4 {
     @apply mb-4;
+    @apply text-neutral-600;
+    @apply dark:text-neutral-40;
   }
 
   h1 {
