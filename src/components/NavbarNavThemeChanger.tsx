@@ -21,13 +21,9 @@ const NavbarNavThemeChanger = ({
         className={Utils.minifyString(`
           p-2.5
           rounded
-          hover:text-neutral-800
           hover:bg-neutral-20
-          focus-visible:text-neutral-800
           focus-visible:bg-neutral-20
-          dark:hover:text-neutral-10
           dark:hover:bg-neutral-700
-          dark:focus-visible:text-neutral-10
           dark:focus-visible:bg-neutral-700
           sm-base:p-3
         `)}

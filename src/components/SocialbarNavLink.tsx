@@ -90,38 +90,6 @@ const SocialbarNavLink = ({
         </svg>
       </a>
     </li>
-    // <li className="mr-0.5">
-    //   <a
-    //     className={Utils.minifyString(`
-    //       ${className}
-    //       block
-    //       w-14
-    //       py-2.5
-    //       text-sm
-    //       font-medium
-    //       text-current
-    //       text-center
-    //       tracking-wide
-    //       no-underline
-    //       rounded
-    //       hover:text-neutral-800
-    //       hover:bg-neutral-20
-    //       focus-visible:text-neutral-800
-    //       focus-visible:bg-neutral-20
-    //       dark:text-current
-    //       dark:hover:text-neutral-10
-    //       dark:hover:bg-neutral-700
-    //       dark:focus-visible:text-neutral-10
-    //       dark:focus-visible:bg-neutral-700
-    //       xs-plus:w-16
-    //       sm-base:w-20
-    //       sm-base:py-3
-    //       sm-base:text-base
-    //       sm-base:tracking-normal
-    //     `)}
-    //     {...htmlAnchorProps}
-    //   />
-    // </li>
   )
 }
 
