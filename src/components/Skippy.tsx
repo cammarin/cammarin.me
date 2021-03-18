@@ -16,14 +16,11 @@ const Skippy = ({ children, ...htmlAnchorProps }: SkippyProps) => {
           font-semibold
           text-neutral-10
           text-center
-          bg-gradient-to-br
-          from-green-400
-          to-blue-500
           glow-md
+          gradient-from-cyan-to-deep-purple
           dark:text-neutral-900
-          dark:from-yellow-400
-          dark:to-pink-500
-          dark:filter-grayscale-30
+          dark:filter-grayscale-25
+          dark:gradient-from-orange-to-pink
           xs-base:px-5
           sm-mini:px-6
           sm-base:px-8

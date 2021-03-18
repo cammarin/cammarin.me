@@ -15,13 +15,10 @@ const GradientText = ({
         relative
         inline-block
         text-transparent
-        bg-gradient-to-br
-        from-green-400
-        to-indigo-500
         bg-clip-text
-        dark:from-yellow-400
-        dark:to-pink-500
-        dark:filter-grayscale-30
+        gradient-from-cyan-to-deep-purple
+        dark:filter-grayscale-25
+        dark:gradient-from-orange-to-pink
       `)}
       {...htmlSpanProps}
       data-content={children}

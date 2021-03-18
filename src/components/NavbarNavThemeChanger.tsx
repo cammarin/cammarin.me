@@ -56,16 +56,16 @@ const NavbarNavThemeChanger = ({
               id="color-mode-toggle-gradient-dark"
               gradientTransform="rotate(45)"
             >
-              <stop offset="20%" stopColor="#34d399" />
-              <stop offset="100%" stopColor="#6366f1" />
+              <stop offset="25%" stopColor="#39accf" />
+              <stop offset="100%" stopColor="#623aef" />
             </linearGradient>
 
             <linearGradient
               id="color-mode-toggle-gradient-light"
               gradientTransform="rotate(45)"
             >
-              <stop offset="20%" stopColor="#fbbf24" />
-              <stop offset="100%" stopColor="#ec4899" />
+              <stop offset="40%" stopColor="#ef8f3a" />
+              <stop offset="100%" stopColor="#f550aa" />
             </linearGradient>
 
             <filter id="svg-gaussian-blur">
