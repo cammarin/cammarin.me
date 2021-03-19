@@ -15,9 +15,9 @@ const GradientText = ({
         inline-block
         text-transparent
         bg-clip-text
-        gradient-from-cyan-to-deep-purple
+        gradient-light
         dark:filter-grayscale-25
-        dark:gradient-from-orange-to-pink
+        dark:gradient-dark
       `)}
       {...htmlSpanProps}
     >

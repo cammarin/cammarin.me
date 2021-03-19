@@ -17,10 +17,10 @@ const Skippy = ({ children, ...htmlAnchorProps }: SkippyProps) => {
           text-neutral-10
           text-center
           glow-md
-          gradient-from-cyan-to-deep-purple
+          gradient-light
           dark:text-neutral-900
           dark:filter-grayscale-25
-          dark:gradient-from-orange-to-pink
+          dark:gradient-dark
           xs-base:px-5
           sm-mini:px-6
           sm-base:px-8
