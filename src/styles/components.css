@@ -13,8 +13,8 @@
      *
      * angle: 120deg
      * from: hsla(230, 92%, 61%, 1) // #405ef7
+     * to: hsla(263, 80%, 55%, 1) // #772fe8
      * curve: ease-in-out
-     * from: hsla(263, 80%, 55%, 1) // #772fe8
      */
     .gradient-light {
       background-image:
@@ -45,8 +45,8 @@
      *
      * angle: 120deg
      * from: hsla(10, 96%, 60%, 1) // #fb5837
-     * curve: ease-in-out
      * to: hsla(337, 90%, 57%, 1) // #f4317d
+     * curve: ease-in-out
      */
     .gradient-dark {
       background-image:
