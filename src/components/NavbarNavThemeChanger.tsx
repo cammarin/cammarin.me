@@ -54,17 +54,17 @@ const NavbarNavThemeChanger = ({
           <defs>
             <linearGradient
               id="color-mode-toggle-gradient-dark"
-              gradientTransform="rotate(45)"
+              gradientTransform="rotate(30)"
             >
-              <stop offset="0%" stopColor="#405ef7" />
+              <stop offset="33%" stopColor="#405ef7" />
               <stop offset="100%" stopColor="#772fe8" />
             </linearGradient>
 
             <linearGradient
               id="color-mode-toggle-gradient-light"
-              gradientTransform="rotate(45)"
+              gradientTransform="rotate(30)"
             >
-              <stop offset="40%" stopColor="#fb5837" />
+              <stop offset="50%" stopColor="#fb5837" />
               <stop offset="100%" stopColor="#f4317d" />
             </linearGradient>
 
