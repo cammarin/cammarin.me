@@ -16,7 +16,7 @@ const GradientText = ({
         text-transparent
         bg-clip-text
         gradient-light
-        dark:filter-grayscale-25
+        dark:filter-grayscale-20
         dark:gradient-dark
       `)}
       {...htmlSpanProps}

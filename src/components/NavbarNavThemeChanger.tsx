@@ -39,7 +39,7 @@ const NavbarNavThemeChanger = ({
           className={Utils.minifyString(`
             w-5
             h-5
-            dark:filter-grayscale-30
+            dark:filter-grayscale-20
             sm-base:w-6
             sm-base:h-6
           `)}
@@ -64,8 +64,8 @@ const NavbarNavThemeChanger = ({
               id="color-mode-toggle-gradient-light"
               gradientTransform="rotate(45)"
             >
-              <stop offset="40%" stopColor="#f75e40" />
-              <stop offset="100%" stopColor="#eb3366" />
+              <stop offset="40%" stopColor="#fb5837" />
+              <stop offset="100%" stopColor="#f4317d" />
             </linearGradient>
 
             <filter id="svg-gaussian-blur">
