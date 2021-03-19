@@ -4,6 +4,7 @@ import Utils from '@/lib/utils'
 
 type GradientLinkProps = JSX.IntrinsicElements['a'] & {
   external?: boolean
+  textContent?: string | ''
 }
 
 const GradientLink = ({
@@ -11,6 +12,7 @@ const GradientLink = ({
   children,
   external = false,
   href = '/',
+  textContent = '',
   ...htmlAnchorProps
 }: GradientLinkProps) => {
   return (
@@ -40,6 +42,7 @@ const GradientLink = ({
               dark:group-hover:glow-opacity-100
               dark:group-focus-visible:glow-opacity-100
             `)}
+            data-content={textContent}
           >
             {children}
           </GradientText>
@@ -67,6 +70,7 @@ const GradientLink = ({
                 dark:group-hover:glow-opacity-100
                 dark:group-focus-visible:glow-opacity-100
               `)}
+              data-content={textContent}
             >
               {children}
             </GradientText>

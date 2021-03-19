@@ -11,7 +11,10 @@ const Home = () => {
       <Intro>
         <DisplayHeading>
           Hi, I’m{' '}
-          <GradientText className="glow-lg glow-opacity-25 dark:glow-opacity-30">
+          <GradientText
+            className="glow-lg glow-opacity-25 dark:glow-opacity-30"
+            data-content="Carlos Marin"
+          >
             Carlos Marin
           </GradientText>
         </DisplayHeading>
@@ -29,8 +32,12 @@ const Home = () => {
         I’m a former aspiring scientist who found his vocation in Information
         Design and programming.{' '}
         <span className="block">
-          <GradientLink href="/about" className="inline-block text-lg">
-            More about me →
+          <GradientLink
+            href="/about"
+            className="inline-block text-lg"
+            textContent="More about me →"
+          >
+            More about me <span aria-hidden="true">→</span>
           </GradientLink>
         </span>
       </p>
@@ -39,8 +46,12 @@ const Home = () => {
         My goal is to make information accessible to everyone and I write about
         it in data visualization.{' '}
         <span className="block">
-          <GradientLink href="/guides" className="inline-block text-lg">
-            Accessible dataviz →
+          <GradientLink
+            href="/guides"
+            className="inline-block text-lg"
+            textContent="Accessible dataviz →"
+          >
+            Accessible dataviz <span aria-hidden="true">→</span>
           </GradientLink>
         </span>
       </p>
@@ -58,8 +69,12 @@ const Home = () => {
         </a>
         .{' '}
         <span className="block">
-          <GradientLink href="/works" className="inline-block text-lg">
-            Check our works →
+          <GradientLink
+            href="/works"
+            className="inline-block text-lg"
+            textContent="Check our works →"
+          >
+            Check our works <span aria-hidden="true">→</span>
           </GradientLink>
         </span>
       </p>

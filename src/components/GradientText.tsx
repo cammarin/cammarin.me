@@ -7,7 +7,6 @@ const GradientText = ({
   children,
   ...htmlSpanProps
 }: GradientTextProps) => {
-  // The `data-content` attribute is necessary for glow effect.
   return (
     <span
       className={Utils.minifyString(`
@@ -21,7 +20,6 @@ const GradientText = ({
         dark:gradient-from-orange-to-pink
       `)}
       {...htmlSpanProps}
-      data-content={children}
     >
       {children}
     </span>

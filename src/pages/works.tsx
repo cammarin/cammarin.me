@@ -12,7 +12,10 @@ const Works = () => {
     >
       <Intro>
         <DisplayHeading>
-          <GradientText className="glow-lg glow-opacity-25 dark:glow-opacity-30">
+          <GradientText
+            className="glow-lg glow-opacity-25 dark:glow-opacity-30"
+            data-content="Works"
+          >
             Works
           </GradientText>
         </DisplayHeading>

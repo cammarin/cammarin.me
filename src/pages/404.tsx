@@ -10,7 +10,10 @@ const Http404 = () => {
     <Layout title="Page not found" description="Resource not found.">
       <Intro>
         <DisplayHeading>
-          <GradientText className="glow-lg glow-opacity-25 dark:glow-opacity-30">
+          <GradientText
+            className="glow-lg glow-opacity-25 dark:glow-opacity-30"
+            data-content="404"
+          >
             404
           </GradientText>
         </DisplayHeading>
@@ -22,8 +25,12 @@ const Http404 = () => {
         The resource you are looking for has not been found or probably no
         longer exists at this place.{' '}
         <span className="block">
-          <GradientLink href="/" className="inline-block text-lg">
-            Back to home →
+          <GradientLink
+            href="/"
+            className="inline-block text-lg"
+            textContent="Back to home →"
+          >
+            Back to home <span aria-hidden="true">→</span>
           </GradientLink>
         </span>
       </p>

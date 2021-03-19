@@ -256,6 +256,7 @@ module.exports = {
 
         addUtilities(glowOpacityUtilities, variants('glowOpacity'))
 
+        // The `data-content` prop is necessary for `background-clip: text`.
         const glowSizeUtilities = Object.entries(theme('glowSize')).map(
           ([modifier, value]) => ({
             [nameClass('glow', modifier)]: {
