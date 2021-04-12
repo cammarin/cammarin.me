@@ -10,10 +10,9 @@ const DisplayHeading = ({
     <h1
       className={Utils.minifyString(`
         ${className}
-        mb-0.5
+        mb-0
         text-7xl
         font-bold
-        sm-base:mb-1
         sm-base:text-8xl
       `)}
       {...htmlHeadingProps}
