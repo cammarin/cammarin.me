@@ -10,13 +10,7 @@ const Home = () => {
     <Layout description="Homepage">
       <Intro>
         <DisplayHeading>
-          Hi, I’m{' '}
-          <GradientText
-            className="glow-lg glow-opacity-25 dark:glow-opacity-30"
-            data-content="Carlos Marin"
-          >
-            Carlos Marin
-          </GradientText>
+          Hi, I’m <GradientText>Carlos Marin</GradientText>
         </DisplayHeading>
 
         <SubHeading>

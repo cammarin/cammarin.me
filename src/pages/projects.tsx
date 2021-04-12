@@ -12,12 +12,7 @@ const Works = () => {
     >
       <Intro>
         <DisplayHeading>
-          <GradientText
-            className="glow-lg glow-opacity-25 dark:glow-opacity-30"
-            data-content="Projects"
-          >
-            Projects
-          </GradientText>
+          <GradientText>Projects</GradientText>
         </DisplayHeading>
 
         <SubHeading>A curated list of works</SubHeading>
