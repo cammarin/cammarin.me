@@ -12,12 +12,7 @@ const Guides = () => {
     >
       <Intro>
         <DisplayHeading>
-          <GradientText
-            className="glow-lg glow-opacity-25 dark:glow-opacity-30"
-            data-content="Articles"
-          >
-            Articles
-          </GradientText>
+          <GradientText>Articles</GradientText>
         </DisplayHeading>
 
         <SubHeading>Make information accessible</SubHeading>
