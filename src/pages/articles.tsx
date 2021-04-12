@@ -4,26 +4,26 @@ import Intro from '@/components/Intro'
 import Layout from '@/components/Layout'
 import SubHeading from '@/components/SubHeading'
 
-const Works = () => {
+const Guides = () => {
   return (
     <Layout
-      title="Works"
-      description="A list of projects I was responsible or part of."
+      title="Articles"
+      description="Thoughts and tips about accessibility in data visualization."
     >
       <Intro>
         <DisplayHeading>
           <GradientText
             className="glow-lg glow-opacity-25 dark:glow-opacity-30"
-            data-content="Works"
+            data-content="Articles"
           >
-            Works
+            Articles
           </GradientText>
         </DisplayHeading>
 
-        <SubHeading>A curated list of projects</SubHeading>
+        <SubHeading>Make information accessible</SubHeading>
       </Intro>
     </Layout>
   )
 }
 
-export default Works
+export default Guides
