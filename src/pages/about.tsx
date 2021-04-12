@@ -12,12 +12,7 @@ const About = () => {
     >
       <Intro>
         <DisplayHeading>
-          <GradientText
-            className="glow-lg glow-opacity-25 dark:glow-opacity-30"
-            data-content="About"
-          >
-            About
-          </GradientText>
+          <GradientText>About</GradientText>
         </DisplayHeading>
 
         <SubHeading>Education, jobs & interests</SubHeading>

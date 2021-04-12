@@ -10,12 +10,7 @@ const Http404 = () => {
     <Layout title="Page not found" description="Resource not found.">
       <Intro>
         <DisplayHeading>
-          <GradientText
-            className="glow-lg glow-opacity-25 dark:glow-opacity-30"
-            data-content="404"
-          >
-            404
-          </GradientText>
+          <GradientText>404</GradientText>
         </DisplayHeading>
 
         <SubHeading>Not found</SubHeading>
