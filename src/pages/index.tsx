@@ -65,7 +65,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="font-medium">Estadão</span>
+          Estadão
         </a>
         .{' '}
         <span className="block">
