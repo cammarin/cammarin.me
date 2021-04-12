@@ -116,14 +116,14 @@ module.exports = {
           '3rem', // 48px
           {
             letterSpacing: '-0.0225em', // tighter
-            lineHeight: 1, // 48px
+            lineHeight: '3.375rem', // 54px
           },
         ],
         '8xl': [
           '3.75rem', // 60px
           {
             letterSpacing: '-0.0225em', // tighter
-            lineHeight: 1, // 60px
+            lineHeight: '4.25rem', // 68px
           },
         ],
       },
