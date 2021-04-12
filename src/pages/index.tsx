@@ -47,7 +47,7 @@ const Home = () => {
         it in data visualization.{' '}
         <span className="block">
           <GradientLink
-            href="/guides"
+            href="/articles"
             className="inline-block text-lg"
             textContent="Accessible dataviz →"
           >
@@ -70,7 +70,7 @@ const Home = () => {
         .{' '}
         <span className="block">
           <GradientLink
-            href="/works"
+            href="/projects"
             className="inline-block text-lg"
             textContent="Check our works →"
           >
