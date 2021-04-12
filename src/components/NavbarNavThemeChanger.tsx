@@ -67,10 +67,6 @@ const NavbarNavThemeChanger = ({
               <stop offset="50%" stopColor="#fb5837" />
               <stop offset="100%" stopColor="#f4317d" />
             </linearGradient>
-
-            <filter id="svg-gaussian-blur">
-              <feGaussianBlur stdDeviation="1.1" />
-            </filter>
           </defs>
 
           <symbol
@@ -99,20 +95,11 @@ const NavbarNavThemeChanger = ({
 
           {/* Avoid hydration mismatch by rendering after mounted on the client. */}
           {mounted ? (
-            <>
-              <use
-                filter="url('#svg-gaussian-blur')"
-                xlinkHref={`#color-mode-toggle-icon-${
-                  theme === 'light' ? 'dark' : 'light'
-                }`}
-              />
-
-              <use
-                xlinkHref={`#color-mode-toggle-icon-${
-                  theme === 'light' ? 'dark' : 'light'
-                }`}
-              />
-            </>
+            <use
+              xlinkHref={`#color-mode-toggle-icon-${
+                theme === 'light' ? 'dark' : 'light'
+              }`}
+            />
           ) : (
             <></>
           )}
