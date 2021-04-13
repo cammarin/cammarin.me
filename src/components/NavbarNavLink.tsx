@@ -15,8 +15,7 @@ const NavbarNavLink = ({
           className={Utils.minifyString(`
             ${className}
             block
-            w-14
-            py-2.5
+            p-2.5
             text-sm
             font-medium
             text-current
@@ -32,9 +31,7 @@ const NavbarNavLink = ({
             dark:hover:bg-neutral-700
             dark:focus-visible:text-neutral-10
             dark:focus-visible:bg-neutral-700
-            xs-plus:w-16
-            sm-base:w-20
-            sm-base:py-3
+            sm-base:p-3
             sm-base:text-base
           `)}
           {...htmlAnchorProps}
