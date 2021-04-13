@@ -9,7 +9,7 @@ const NavbarNavLink = ({
   ...htmlAnchorProps
 }: NavbarNavLinkProps) => {
   return (
-    <li className="mr-0.5">
+    <li>
       <Link href={href}>
         <a
           className={Utils.minifyString(`
