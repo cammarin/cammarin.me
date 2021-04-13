@@ -2,6 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+  mode: 'jit',
   purge: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
@@ -168,30 +169,6 @@ module.exports = {
       'xl-mini': '1536px',
       'xl-base': '1920px',
       'xl-plus': '2400px',
-    },
-  },
-  variants: {
-    extend: {
-      backgroundColor: ['focus-visible'],
-      filter: ['dark'],
-      glowOpacity: [
-        'hover',
-        'focus-visible',
-        'group-hover',
-        'group-focus-visible',
-      ],
-      glowSize: [
-        'hover',
-        'focus-visible',
-        'group-hover',
-        'group-focus-visible',
-      ],
-      margin: ['last'],
-      ringColor: ['focus-visible'],
-      ringOffsetColor: ['focus-visible'],
-      ringOffsetWidth: ['focus-visible'],
-      ringWidth: ['focus-visible'],
-      textColor: ['focus-visible'],
     },
   },
   plugins: [
