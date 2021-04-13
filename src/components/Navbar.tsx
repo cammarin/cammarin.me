@@ -9,8 +9,8 @@ const Navbar = ({ className = '', ...htmlNavProps }: NavbarProps) => {
     <nav
       className={Utils.minifyString(`
         ${className}
-        flex
-        justify-between
+        xs-plus:flex
+        xs-plus:justify-between
       `)}
       {...htmlNavProps}
     />
