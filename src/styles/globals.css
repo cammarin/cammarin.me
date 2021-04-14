@@ -1,4 +1,72 @@
+@tailwind base;
 @tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 1.5px;
+
+    @apply text-neutral-300;
+    @apply rounded-sm;
+    @apply hover:text-neutral-900;
+    @apply focus-visible:text-neutral-900;
+    @apply dark:text-neutral-50;
+    @apply dark:hover:text-neutral-10;
+    @apply dark:focus-visible:text-neutral-10;
+  }
+
+  a:hover,
+  a:focus-visible {
+    text-decoration-thickness: 2px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply mb-4;
+    @apply text-neutral-600;
+    @apply dark:text-neutral-40;
+  }
+
+  h1 {
+    @apply text-5xl;
+    @apply font-bold;
+    @apply sm-base:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+    @apply font-semibold;
+    @apply sm-base:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl;
+    @apply font-semibold;
+    @apply sm-base:text-2xl;
+  }
+
+  h4 {
+    @apply text-base;
+    @apply font-semibold;
+    @apply sm-base:text-lg;
+  }
+
+  p {
+    @apply mb-4;
+    @apply last:mb-0;
+  }
+
+  p + h1,
+  p + h2,
+  p + h3,
+  p + h4 {
+    margin-top: 1em;
+  }
+}
 
 @layer components {
   @variants dark {
@@ -104,5 +172,31 @@
   @keyframes move-bg {
     0% { background-position: 0% 50%; }
     100% { background-position: 200% 50%; }
+  }
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply focus-visible:ring-1;
+    @apply focus-visible:ring-neutral-400;
+    @apply focus-visible:ring-offset-1;
+    @apply focus-visible:ring-offset-neutral-10;
+    @apply dark:focus-visible:ring-neutral-80;
+    @apply dark:focus-visible:ring-offset-neutral-900;
+  }
+
+  .focus-ring:focus:not(:focus-visible),
+  .focus-ring:focus:not(.focus-visible) {
+    outline: none;
+  }
+}
+
+@layer base {
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    @apply focus-ring;
   }
 }
