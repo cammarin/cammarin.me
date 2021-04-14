@@ -10,7 +10,7 @@ const NavbarNavThemeChanger = ({
   className = '',
   ...htmlButtonProps
 }: NavbarNavThemeChangerProps) => {
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
 
   const { mounted } = useContext(AppContext)
 
@@ -27,10 +27,10 @@ const NavbarNavThemeChanger = ({
           dark:focus-visible:bg-neutral-700
           sm-base:p-3
         `)}
-        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+        onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}
         aria-label={
           mounted
-            ? `Switch to ${theme === 'light' ? 'dark' : 'light'} theme`
+            ? `Switch to ${resolvedTheme === 'light' ? 'dark' : 'light'} theme`
             : 'Toggle theme'
         }
         {...htmlButtonProps}
@@ -97,7 +97,7 @@ const NavbarNavThemeChanger = ({
           {mounted ? (
             <use
               xlinkHref={`#color-mode-toggle-icon-${
-                theme === 'light' ? 'dark' : 'light'
+                resolvedTheme === 'light' ? 'dark' : 'light'
               }`}
             />
           ) : (
