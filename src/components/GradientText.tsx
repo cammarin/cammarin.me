@@ -11,6 +11,8 @@ const GradientText = ({
     <span
       className={Utils.minifyString(`
         ${className}
+        pb-1
+        -mb-1
         relative
         inline-block
         text-transparent
