@@ -25,8 +25,8 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
 
       <div
         className={Utils.minifyString(`
-          page
           grid
+          grid-rows-[min-content,1fr,min-content]
           gap-y-10
           max-w-3xl
           min-h-screen
