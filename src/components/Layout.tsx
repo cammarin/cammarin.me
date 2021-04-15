@@ -30,15 +30,15 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
           gap-y-10
           max-w-3xl
           min-h-screen
+          px-1.5
           mx-auto
-          xs-base:px-1.5
           sm-mini:px-3.5
           sm-base:px-3
           sm-base:gap-y-12
           sm-plus:px-5
         `)}
       >
-        <header id="masthead" className="py-3 sm-base:py-4">
+        <header id="masthead" className="py-1.5 xs-plus:py-3 sm-base:py-4">
           <Navbar aria-label="Main navigation">
             <Navbar.Brand>@cammarin</Navbar.Brand>
 
