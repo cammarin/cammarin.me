@@ -16,7 +16,7 @@ const Home = () => {
         <SubHeading>
           Lead Information{' '}
           <span className="break-words">Designer+Developer</span> at Estadão{' '}
-          <span className="sr-only xs-plus:not-sr-only sm-base:sr-only">
+          <span className="xs-base:sr-only xs-plus:not-sr-only sm-base:sr-only">
             newsroom
           </span>
         </SubHeading>
