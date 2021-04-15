@@ -7,9 +7,17 @@ const NavbarNav = ({ className = '', ...htmlUListProps }: NavbarNavProps) => {
   // TODO: refactor to Flex when `gap` is supported in Safari.
   return (
     <ul
-      className={Utils.minifyString(
-        `${className} grid auto-cols-min grid-flow-col gap-0.5`
-      )}
+      className={Utils.minifyString(`
+        ${className}
+        grid
+        row-start-2
+        col-span-2
+        auto-cols-min
+        grid-flow-col
+        gap-x-0.5
+        xs-plus:row-start-auto
+        xs-plus:col-span-1
+      `)}
       {...htmlUListProps}
     />
   )
