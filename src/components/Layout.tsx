@@ -46,8 +46,9 @@ const Layout = ({ title = '', description, children }: LayoutProps) => {
               <Navbar.Nav.Link href="/about">About</Navbar.Nav.Link>
               <Navbar.Nav.Link href="/articles">Articles</Navbar.Nav.Link>
               <Navbar.Nav.Link href="/projects">Projects</Navbar.Nav.Link>
-              <Navbar.Nav.ThemeChanger />
             </Navbar.Nav>
+
+            <Navbar.ThemeChanger />
           </Navbar>
         </header>
 
