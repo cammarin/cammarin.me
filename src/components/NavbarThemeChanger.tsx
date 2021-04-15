@@ -18,6 +18,8 @@ const NavbarThemeChanger = ({
     <button
       type="button"
       className={Utils.minifyString(`
+        ${className}
+        justify-self-end
         p-2.5
         rounded
         hover:bg-neutral-20

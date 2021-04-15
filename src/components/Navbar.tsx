@@ -10,8 +10,14 @@ const Navbar = ({ className = '', ...htmlNavProps }: NavbarProps) => {
     <nav
       className={Utils.minifyString(`
         ${className}
-        xs-plus:flex
-        xs-plus:justify-between
+        grid
+        grid-rows-[min-content,min-content]
+        grid-cols-[min-content,1fr]
+        gap-x-0.5
+        gap-y-1
+        xs-plus:grid-rows-none
+        xs-plus:grid-cols-[min-content,1fr,min-content]
+        xs-plus:justify-items-end
       `)}
       {...htmlNavProps}
     />
